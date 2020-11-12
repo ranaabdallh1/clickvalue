@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/increasebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INCREASE!"
+        android:onClick="countIN"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="200dp"
+            android:background="@color/colorAccent"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="15dp"/>
+
+         <Button
+            android:id="@+id/decreasebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="@+id/increasebtn"
+            android:layout_marginTop="200dp"
+            android:onClick="countDE"
+            android:background="@color/colorAccent"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:layout_marginRight="15dp"
+            android:text="DECREASE!" />
+
+            <Button
+                android:id="@+id/RESTbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="500dp"
+                android:onClick="rest"
+                android:background="#FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:text="REST!" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="COUNTER"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:layout_marginTop="47dp"
+                    android:textSize="30sp"
+                    android:id="@+id/count"/>
+
+
+
+
+
+</RelativeLayout>
